@@ -1,0 +1,121 @@
+.container-activities-card {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  padding: 25px 0;
+  justify-content: space-between;
+}
+
+.activities-card-large {
+  height: 400px;
+  width: 23%;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px #f2f2f2;
+}
+
+.activities-card-large a {
+  text-decoration: none;
+  color: black;
+}
+
+.activities-card-medium {
+  height: 215px;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px #f2f2f2;
+}
+
+.activities-card-medium a {
+  text-decoration: none;
+  color: black;
+}
+
+.activities-card-small {
+  height: 160px;
+  width: 100%;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px #f2f2f2;
+}
+
+.activities-card-small a {
+  text-decoration: none;
+  color: black;
+}
+
+.activities-card-description {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.activities-card-img-large {
+  height: 350px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  object-fit: cover;
+}
+
+.activities-card-img-medium {
+  height: 165px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  object-fit: cover;
+}
+
+.activities-card-img-small {
+  height: 110px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  object-fit: cover;
+}
+
+.activities-column {
+  height: 400px;
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .activities .container-activities-card {
+    flex-direction: column;
+  }
+
+  .activities-column {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .activities-card-large {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .activities-card-medium {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .activities-card-small {
+    height: 250px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .activities-card-img-large {
+    height: 200px;
+  }
+
+  .activities-card-img-medium {
+    height: 200px;
+  }
+
+  .activities-card-img-small {
+    height: 200px;
+  }
+}

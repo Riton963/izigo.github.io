@@ -1,0 +1,159 @@
+.rental .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.available-rental {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 65%;
+}
+
+.rental-container {
+  padding: 15px 25px;
+}
+
+.rental-container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.grid-card {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rental-card {
+  margin: 15px 0;
+  background-color: white;
+  width: 30%;
+  height: 220px;
+  border-radius: 22px;
+  border: White solid 4px;
+  box-shadow: 1px 1px 10px grey;
+}
+
+.rental-card-img {
+  object-fit: cover;
+  height: 60%;
+  width: 100%;
+  border-radius: 22px 22px 0 0;
+}
+
+.content-card {
+  margin: 10px 10px;
+}
+
+.stars {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.blue-stars {
+  color: #FC4C69;
+}
+
+.grey-stars {
+  color: #f2f2f2;
+}
+
+/* popular rental */
+
+.popular-rental {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  width: 32%;
+}
+.popular-rental-container {
+  padding: 20px 35px;
+}
+
+.popular-rental-container a {
+  text-decoration: none;
+  color: black;
+}
+
+.popular-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-card {
+  width: 100%;
+  height: 155px;
+  background-color: white;
+  border-radius: 22px;
+  border: solid 4px white;
+  display: flex;
+  margin-top: 20px;
+  box-shadow: 3px 3px 10px #f2f2f2;
+}
+
+.popular-card-description {
+  padding-left: 15px;
+}
+
+.popular-card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popular-card-img {
+  object-fit: cover;
+  height: 100%;
+  width: 40%;
+  border-radius: 22px 0 0 22px;
+}
+
+.stars-popular {
+  padding: 25px 0 0 0;
+  font-size: 12px;
+}
+
+@media all and (max-width: 1280px) {
+  .rental .container {
+    flex-direction: column;
+  }
+  .available-rental {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .popular-rental {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .rental .container {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .available-rental {
+    width: 100%;
+    background-color: white;
+  }
+
+  .rental-container {
+    width: 100%;
+    padding: 20px 35px;
+  }
+
+  .popular-rental {
+    width: 100%;
+    border-radius: 0;
+  }
+  .grid-card {
+    flex-direction: column;
+  }
+  .rental-card {
+    width: 100%;
+  }
+}
