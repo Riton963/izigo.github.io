@@ -342,7 +342,32 @@
 
       function changeColor() {
         console.log('test');
-        document.getElementById("my-div").style.backgroundColor = "green";
+        // Étape 1: Création de la structure HTML sous forme de chaîne
+        const newElementHTML = `
+        <div class="step-frieze">
+          <div class="add-more-step" id="add-step">
+            +
+          </div>
+          <div class="step-supp">
+            <div class="step-button">Départ</div>
+            <div class="step-button">Arrivée</div>
+            <div class="step-button">Date de début</div>
+            <div class="step-button">Date de fin</div>
+            <div class="step-button">Nombres de personnes</div>
+          </div>
+        </div>`;
+
+        // Étape 2: Sélection de l'élément parent ou de l'élément après lequel vous souhaitez insérer le nouvel élément
+        // Supposons que l'élément après lequel vous souhaitez insérer le nouveau est l'élément ayant la classe 'step-frieze'
+        const referenceElement = document.querySelector('.step-frieze');
+
+        // Étape 3: Insertion du nouvel élément dans le DOM
+        // Nous utilisons la méthode insertAdjacentHTML ici pour insérer notre chaîne HTML juste après l'élément sélectionné
+        if (referenceElement) {
+          referenceElement.insertAdjacentHTML('afterend', newElementHTML);
+        } else {
+          console.log("Élément de référence '.step-frieze' non trouvé.");
+        }
       }
     </script>
   </body>
