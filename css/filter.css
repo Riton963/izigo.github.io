@@ -34,6 +34,8 @@
 
 .logo-white {
   margin-left: 15px;
+  height: 40px;
+  width: 110px;
 }
 
 .step {
@@ -190,6 +192,10 @@
 }
 
 @media all and (max-width: 768px) {
+  .logo-white {
+    height: 30px;
+    width: 80px;
+  }
   .title-bg{
     font-size: 18px;
 
